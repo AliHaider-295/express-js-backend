@@ -1,9 +1,15 @@
-var express = require("express");
-var router = express.Router();
-
-/* GET home page. */
-router.get("/", function (req, res, next) {
-  res.send("I am Mern stack trainee at knowladge streams lahore");
+var routes = require("express").Router();
+routes.get("/create", (req, res) => {
+  res.send("creat user api");
+});
+routes.get("/read", (req, res) => {
+  res.send("creat user api");
+});
+routes.get("/post", (req, res) => {
+  res.send("creat user api");
+});
+routes.get("/delete", (req, res) => {
+  res.send("delete user api");
 });
 
-module.exports = router;
+module.exports = routes;
